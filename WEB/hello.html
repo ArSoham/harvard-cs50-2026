@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS50 Web Exercises | Hello</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Hello Page</h1>
+    </header>
+    <main>
+      <p>Click a button to update the page background using JavaScript.</p>
+      <div class="button-row">
+        <button id="red">Red</button>
+        <button id="green">Green</button>
+        <button id="blue">Blue</button>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>Interactive DOM updates with native JavaScript.</p>
+    </footer>
+  </div>
+  <script>
+    const body = document.body;
+    document.getElementById('red').addEventListener('click', () => body.style.backgroundColor = '#f8d7da');
+    document.getElementById('green').addEventListener('click', () => body.style.backgroundColor = '#d4edda');
+    document.getElementById('blue').addEventListener('click', () => body.style.backgroundColor = '#d1ecf1');
+  </script>
+</body>
+</html>

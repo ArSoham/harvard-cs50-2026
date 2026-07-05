@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS50 Web Exercises | Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Search Form Example</h1>
+    </header>
+    <main>
+      <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="query">Search Google:</label>
+        <input id="query" name="q" type="search" placeholder="Enter a search term">
+        <button type="submit">Google Search</button>
+      </form>
+      <p class="feedback">This form sends the query to Google using the browser's native search action.</p>
+    </main>
+    <footer class="site-footer">
+      <p>Forms connect page content with external services.</p>
+    </footer>
+  </div>
+</body>
+</html>

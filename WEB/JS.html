@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS50 Web Exercises | JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>JavaScript Example</h1>
+    </header>
+    <main>
+      <p id="status">Press a button to update the page state.</p>
+      <div class="button-row">
+        <button id="show">Show Message</button>
+        <button id="hide">Hide Message</button>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>Native JavaScript updates the DOM in response to user actions.</p>
+    </footer>
+  </div>
+  <script>
+    const status = document.getElementById('status');
+
+    document.getElementById('show').addEventListener('click', () => {
+      status.textContent = 'JavaScript is now active. You clicked Show Message.';
+      status.style.color = '#1a73e8';
+    });
+
+    document.getElementById('hide').addEventListener('click', () => {
+      status.textContent = 'The message is hidden.';
+      status.style.color = '#6c757d';
+    });
+  </script>
+</body>
+</html>
